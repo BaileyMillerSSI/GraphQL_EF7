@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphQLApi", "GraphQLApi\GraphQLApi.csproj", "{E5F61783-3A1E-418D-A127-609256AD3395}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{D47015F0-D1F4-4745-B685-7830B14022DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E5F61783-3A1E-418D-A127-609256AD3395}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5F61783-3A1E-418D-A127-609256AD3395}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5F61783-3A1E-418D-A127-609256AD3395}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5F61783-3A1E-418D-A127-609256AD3395}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D47015F0-D1F4-4745-B685-7830B14022DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D47015F0-D1F4-4745-B685-7830B14022DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D47015F0-D1F4-4745-B685-7830B14022DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D47015F0-D1F4-4745-B685-7830B14022DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7A984A92-0F93-43FA-90FC-A193EAF68A24}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,26 @@
+version: '3.4'
+
+services:
+  database:
+    image: mysql:5.7
+    container_name: graphql_db
+    ports:
+    - "3306:3306"
+    volumes: 
+       - db_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: "root"
+      MYSQL_HOST: "localhost"
+      MYSQL_ROOT_HOST: "%"
+    restart: on-failure
+
+  graphqlapi:
+    image: ${DOCKER_REGISTRY}graphqlapi
+    build:
+      context: .
+      dockerfile: GraphQLApi/Dockerfile
+    depends_on:
+      - database
+
+volumes:
+  db_data: 
