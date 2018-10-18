@@ -31,7 +31,7 @@ namespace GraphQLApi
 
             var connection = $"Server=database;Database=UserIdentityDB;Uid=root;Pwd=root;";
             services.AddDbContext<HeroContext>(options=> options.UseMySQL(connection));
-
+            services.AddScoped<IGraphQL, Database.GraphQLApi>();
 
             try
             {
